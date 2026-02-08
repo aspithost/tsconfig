@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@abelspithost/tsconfig",
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "esnext",
+    "lib": ["ESNext"],
+
+    /* Modules */
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+
+    /* Types */
+    "types": ["node"]
+  }
+}

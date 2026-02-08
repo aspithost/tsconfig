@@ -1,0 +1,14 @@
+{
+  "name": "@abelspithost/tsconfig",
+  "version": "0.0.0",
+  "description": "Shared base TypeScript configuration",
+  "license": "ISC",
+  "author": "Abel Spithost",
+  "exports": "./tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  }
+}

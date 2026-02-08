@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Type Checking */
+    "strict": true,
+
+    /* Modules */
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "${configDir}/dist",
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Paths & aliases */
+    "baseUrl": "${configDir}",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["${configDir}/dist", "${configDir}/node_modules"],
+  "include": ["${configDir}/**/*.ts"]
+}
