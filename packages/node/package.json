@@ -1,9 +1,14 @@
 {
   "name": "@abelspithost/tsconfig-node",
   "version": "0.0.0",
-  "description": "Shared TypeScript configuration for Node.js",
+  "description": "TypeScript configuration for Node.js",
   "license": "ISC",
   "author": "Abel Spithost",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aspithost/tsconfig.git",
+    "directory": "packages/node"
+  },
   "exports": "./tsconfig.json",
   "files": [
     "tsconfig.json"
