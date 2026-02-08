@@ -1,7 +1,7 @@
 {
   "name": "@abelspithost/tsconfig",
   "version": "0.0.0",
-  "description": "Shared base TypeScript configuration",
+  "description": "Basic TypeScript configuration",
   "license": "ISC",
   "author": "Abel Spithost",
   "exports": "./tsconfig.json",
