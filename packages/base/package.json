@@ -4,6 +4,11 @@
   "description": "Basic TypeScript configuration",
   "license": "ISC",
   "author": "Abel Spithost",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aspithost/tsconfig.git",
+    "directory": "packages/base"
+  },
   "exports": "./tsconfig.json",
   "files": [
     "tsconfig.json"
