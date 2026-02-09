@@ -1,0 +1,19 @@
+name: Publish package to npm
+description: Publishes an npm package to the registry
+
+inputs:
+  package-path:
+    description: The path to the package directory to publish
+    required: true
+  npm-token:
+    description: NPM token
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Publish package
+      shell: bash
+      run: npm publish --prefix '${{ inputs.package-path }}' --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}

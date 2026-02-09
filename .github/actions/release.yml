@@ -1,0 +1,52 @@
+name: Release
+description: Publishes a package to NPM and creates and pushes a new tag
+
+inputs:
+  package-path:
+    description: The path to the package directory
+    required: true
+  npm-token:
+    description: The npm authentication token
+    required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Get local package information
+        id: local
+        uses: ./npm/get-package-information
+        with:
+          working-directory: ${{ inputs.package-path }}
+
+      - name: Get remote version
+        id: remote
+        uses: ./npm/get-version-remote
+        with:
+          package-name: ${{ steps.local.outputs.name }}
+
+      - name: Check versions
+        if: steps.local.outputs.version == steps.remote.outputs.version
+        run: |
+          echo "Local version (${{ steps.local.outputs.version }}) matches remote version. Skipping publish and tag steps."
+          exit 1
+
+      - name: Publish to npm
+        uses: ./npm/publish
+        with:
+          package-path: ${{ inputs.package-path }}
+          npm-token: ${{ inputs.token }}
+
+      - name: Create and push tag
+        uses: ./git/create-and-push-tag
+        with:
+          package-name: ${{ steps.local.outputs.name }}
+          package-version: ${{ steps.local.outputs.version }}
