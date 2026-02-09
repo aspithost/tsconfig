@@ -5,15 +5,11 @@ inputs:
   package-path:
     description: The path to the package directory to publish
     required: true
-  npm-token:
-    description: NPM token
-    required: true
 
 runs:
   using: composite
   steps:
     - name: Publish package
+      working-directory: ${{ inputs.package-path }}
       shell: bash
-      run: npm publish --prefix '${{ inputs.package-path }}' --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
+      run: npm publish --access public

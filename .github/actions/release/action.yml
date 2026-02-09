@@ -5,9 +5,6 @@ inputs:
   package-path:
     description: The path to the package directory
     required: true
-  npm-token:
-    description: The npm authentication token
-    required: true
 
 runs:
   using: composite
@@ -29,7 +26,6 @@ runs:
       uses: ./.github/actions/npm/publish
       with:
         package-path: ${{ inputs.package-path }}
-        npm-token: ${{ inputs.npm-token }}
 
     - name: Create and push tag
       if: steps.local.outputs.version != steps.remote.outputs.version

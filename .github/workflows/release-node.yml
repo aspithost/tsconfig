@@ -4,6 +4,7 @@ on: workflow_dispatch
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   release:
@@ -16,9 +17,9 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24
+          registry-url: https://registry.npmjs.org
 
       - name: Release
         uses: ./.github/actions/release
         with:
           package-path: packages/node
-          npm-token: ${{ secrets.NPM_TOKEN }}
