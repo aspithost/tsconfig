@@ -1,5 +1,7 @@
 # @abelspithost/tsconfig
 
+[![npm version](https://img.shields.io/npm/v/@abelspithost/tsconfig)](https://www.npmjs.com/package/@abelspithost/tsconfig)
+
 Strict base TypeScript configuration that all other presets extend.
 
 ## Installation
