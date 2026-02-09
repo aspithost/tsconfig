@@ -13,7 +13,8 @@ runs:
   using: composite
   steps:
     - name: Publish package
+      working-directory: ${{ inputs.package-path }}
       shell: bash
-      run: npm publish --prefix '${{ inputs.package-path }}' --access public
+      run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
