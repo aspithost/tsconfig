@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/tsconfig-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript configuration for Node.js",
   "license": "ISC",
   "author": "Abel Spithost",
@@ -14,7 +14,7 @@
     "tsconfig.json"
   ],
   "devDependencies": {
-    "@abelspithost/tsconfig": "0.0.0"
+    "@abelspithost/tsconfig": "^0.0.1"
   },
   "peerDependencies": {
     "@types/node": ">=20.0.0",
