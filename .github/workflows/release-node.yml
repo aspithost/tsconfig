@@ -13,5 +13,3 @@ jobs:
       contents: write
     with:
       package-path: packages/node
-    secrets:
-      npm-token: ${{ secrets.NPM_TOKEN }}
