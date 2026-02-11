@@ -1,4 +1,4 @@
-name: Release node tsconfig
+name: Release base tsconfig
 
 on: workflow_dispatch
 
