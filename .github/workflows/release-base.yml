@@ -8,10 +8,10 @@ permissions:
 
 jobs:
   release:
-    uses: aspithost/actions/.github/workflows/release.yml
+    uses: aspithost/actions/.github/workflows/release.yml@v0
     permissions:
       contents: write
     with:
-      package-path: packages/base
+      package-path: packages/node
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
