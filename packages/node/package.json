@@ -13,11 +13,11 @@
   "files": [
     "tsconfig.json"
   ],
-  "devDependencies": {
-    "@abelspithost/tsconfig": "^0.0.1"
-  },
   "peerDependencies": {
     "@types/node": ">=20.0.0",
     "typescript": ">=5.0.0"
+  },
+  "dependencies": {
+    "@abelspithost/tsconfig": "^0.0.1"
   }
 }
