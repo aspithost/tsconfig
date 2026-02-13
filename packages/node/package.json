@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/tsconfig-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript configuration for Node.js",
   "license": "ISC",
   "author": "Abel Spithost",
