@@ -1,13 +1,16 @@
 {
   "name": "@abelspithost/tsconfig",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Basic TypeScript configuration",
   "license": "ISC",
-  "author": "Abel Spithost",
+  "author": {
+    "name": "Abel Spithost",
+    "url": "https://github.com/aspithost"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/aspithost/tsconfig.git",
-    "directory": "packages/base"
+    "directory": "packages/node"
   },
   "exports": "./tsconfig.json",
   "files": [
