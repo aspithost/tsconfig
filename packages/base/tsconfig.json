@@ -14,17 +14,16 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDir": "${configDir}",
-    "outDir": "${configDir}/dist",
 
     /* Interop Constraints */
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
 
     /* Paths & aliases */
-    "baseUrl": "${configDir}",
+    "rootDir": "${configDir}",
+    "outDir": "${configDir}/dist",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["${configDir}/src/*"]
     }
   },
   "exclude": ["${configDir}/dist", "${configDir}/node_modules"],
