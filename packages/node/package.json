@@ -17,7 +17,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@abelspithost/tsconfig": "^0.1.0"
+    "@abelspithost/tsconfig": "^0.1.1"
   },
   "peerDependencies": {
     "@types/node": ">=20.0.0",
