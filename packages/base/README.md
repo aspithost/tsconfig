@@ -10,7 +10,7 @@ Strict base TypeScript configuration that all other presets extend.
 npm install -D @abelspithost/tsconfig typescript
 ```
 
-Requires `typescript` >= 5.0.0 as a peer dependency.
+Requires `typescript` >= 6.0.0 as a peer dependency.
 
 ## Usage
 
@@ -20,6 +20,18 @@ Requires `typescript` >= 5.0.0 as a peer dependency.
   "extends": "@abelspithost/tsconfig"
 }
 ```
+
+> **Note:** This base config does not set `module` or `moduleResolution`. When using `verbatimModuleSyntax`, you should set these explicitly in your project's `tsconfig.json` to match your runtime — for example:
+>
+> ```jsonc
+> {
+>   "extends": "@abelspithost/tsconfig",
+>   "compilerOptions": {
+>     "module": "NodeNext",
+>     "moduleResolution": "NodeNext"
+>   }
+> }
+> ```
 
 ## What's included
 
@@ -46,10 +58,10 @@ Requires `typescript` >= 5.0.0 as a peer dependency.
 - `forceConsistentCasingInFileNames` — disallows inconsistently-cased references to the same file
 - `skipLibCheck` — skips type checking of declaration files
 
-### Paths
+### Paths & Aliases
 
-- `baseUrl` — set to `${configDir}`
-- `@/*` — aliased to `./src/*`
+- `rootDir` — set to `${configDir}`
+- `@/*` — aliased to `${configDir}/src/*`
 
 ### File Scope
 
