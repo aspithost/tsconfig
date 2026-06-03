@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/tsconfig",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Basic TypeScript configuration",
   "license": "ISC",
   "author": {
@@ -17,6 +17,6 @@
     "tsconfig.json"
   ],
   "peerDependencies": {
-    "typescript": ">=5.0.0"
+    "typescript": ">=6.0.0"
   }
 }
