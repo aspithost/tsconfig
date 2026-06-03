@@ -1,5 +1,7 @@
 # @abelspithost/tsconfig-node
 
+[![npm version](https://img.shields.io/npm/v/@abelspithost/tsconfig-node)](https://www.npmjs.com/package/@abelspithost/tsconfig-node)
+
 TypeScript configuration preset for Node.js projects. Extends [`@abelspithost/tsconfig`](../base).
 
 ## Installation
@@ -10,8 +12,8 @@ npm install -D @abelspithost/tsconfig-node @types/node typescript
 
 Peer dependencies:
 
-- `typescript` >= 5.0.0
-- `@types/node` >= 20.0.0
+- `typescript` >= 6.0.0
+- `@types/node` >= 24.0.0
 
 ## Usage
 
@@ -28,14 +30,14 @@ Inherits all settings from the [base config](../base) and adds:
 
 ### Language and Environment
 
-- `target` — set to `esnext`, compiles to the latest ECMAScript standard
-- `lib` — set to `["ESNext"]`
+- `target` — set to `ESNext`, targeting modern Node.js (20+); downgrade if supporting older runtimes
+- `lib` — set to `["ESNext"]`, excludes DOM types
 
 ### Modules
 
-- `module` — set to `nodenext`, enables Node.js native ESM module resolution
-- `moduleResolution` — set to `nodenext`, resolves modules using Node.js ESM rules (including `exports` in `package.json`)
+- `module` — set to `NodeNext`, enables Node.js native ESM resolution
+- `moduleResolution` — set to `NodeNext`, resolves modules using Node.js ESM rules including `exports` fields in `package.json`
 
 ### Types
 
-- `types` — set to `["node"]`, includes Node.js type definitions globally
+- `types` — set to `["node"]`, includes Node.js global type definitions and excludes unrelated `@types/*` packages from auto-inclusion
