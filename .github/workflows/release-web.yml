@@ -1,0 +1,17 @@
+name: Release web tsconfig
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  release:
+    uses: aspithost/actions/.github/workflows/node-release.yml@v2
+    permissions:
+      contents: write
+      id-token: write
+    with:
+      artifact-name: '' # Note: No need to build or download a dist artifacts
+      working-directory: packages/web
