@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/tsconfig-web",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TypeScript configuration for web applications",
   "license": "ISC",
   "author": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aspithost/tsconfig.git",
+    "url": "git+https://github.com/aspithost/tsconfig.git",
     "directory": "packages/web"
   },
   "exports": "./tsconfig.json",
