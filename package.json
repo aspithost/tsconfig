@@ -1,6 +1,6 @@
 {
-  "author": "Abel Spithost",
   "description": "Repository that exports TypeScript configuration files",
+  "author": "Abel Spithost",
   "license": "ISC",
   "private": true,
   "workspaces": [
