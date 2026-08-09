@@ -1,12 +1,19 @@
 {
   "name": "@abelspithost/tsconfig-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript configuration for Node.js",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "node",
+    "configuration"
+  ],
   "license": "ISC",
   "author": {
     "name": "Abel Spithost",
     "url": "https://github.com/aspithost"
   },
+  "homepage": "https://github.com/aspithost/tsconfig#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aspithost/tsconfig.git",
@@ -17,7 +24,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@abelspithost/tsconfig": "^0.2.0"
+    "@abelspithost/tsconfig": "^0.3.0"
   },
   "peerDependencies": {
     "@types/node": ">=24.0.0",

@@ -1,12 +1,19 @@
 {
   "name": "@abelspithost/tsconfig-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript configuration for web applications",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "web",
+    "configuration"
+  ],
   "license": "ISC",
   "author": {
     "name": "Abel Spithost",
     "url": "https://github.com/aspithost"
   },
+  "homepage": "https://github.com/aspithost/tsconfig#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aspithost/tsconfig.git",
@@ -17,7 +24,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@abelspithost/tsconfig": "^0.2.0"
+    "@abelspithost/tsconfig": "^0.3.0"
   },
   "peerDependencies": {
     "typescript": ">=6.0.0"
