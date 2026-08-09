@@ -2,11 +2,17 @@
   "name": "@abelspithost/tsconfig",
   "version": "0.2.0",
   "description": "Basic TypeScript configuration",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "configuration"
+  ],
   "license": "ISC",
   "author": {
     "name": "Abel Spithost",
     "url": "https://github.com/aspithost"
   },
+  "homepage": "https://github.com/aspithost/tsconfig#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aspithost/tsconfig.git",

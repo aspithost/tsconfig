@@ -20,12 +20,11 @@
     "skipLibCheck": true,
 
     /* Paths & aliases */
-    "rootDir": "${configDir}",
+    "rootDir": "${configDir}/src",
     "outDir": "${configDir}/dist",
     "paths": {
       "@/*": ["${configDir}/src/*"]
     }
   },
-  "exclude": ["${configDir}/dist", "${configDir}/node_modules"],
-  "include": ["${configDir}/**/*.ts"]
+  "include": ["${configDir}/src/**/*.ts"]
 }
