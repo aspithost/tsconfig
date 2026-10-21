@@ -51,8 +51,6 @@ Requires `typescript` >= 6.0.0 as a peer dependency.
 - `declaration` — generates `.d.ts` declaration files
 - `declarationMap` — generates declaration source maps for go-to-definition support
 - `sourceMap` — generates `.js.map` source maps
-- `rootDir` — set to `${configDir}/src`
-- `outDir` — set to `${configDir}/dist`
 
 ### Interop Constraints
 
@@ -62,8 +60,10 @@ Requires `typescript` >= 6.0.0 as a peer dependency.
 ### Paths & Aliases
 
 - `rootDir` — set to `${configDir}/src`
-- `@/*` — aliased to `${configDir}/src/*`
+- `outDir` — set to `${configDir}/dist`
 
 ### File Scope
 
-- **include**: `${configDir}/src/**/*.ts`
+- **include**:
+  - `${configDir}/src/**/*.ts`
+  
