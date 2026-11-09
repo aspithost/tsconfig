@@ -24,7 +24,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@abelspithost/tsconfig": "^0.3.0"
+    "@abelspithost/tsconfig": "^0.4.0"
   },
   "peerDependencies": {
     "typescript": ">=6.0.0"
