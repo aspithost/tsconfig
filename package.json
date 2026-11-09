@@ -6,9 +6,17 @@
   "workspaces": [
     "packages/*"
   ],
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "release": "npx tsx releasePackages.ts",
+    "release:dry-run": "npx -p @abelspithost/conventional-commits-changelog release-packages --dry-run"
+  },
   "devDependencies": {
     "@abelspithost/commitlint": "^0.2.3",
     "@abelspithost/conventional-commits-changelog": "^0.0.3",
+    "@commitlint/cli": "^21.2.4",
+    "husky": "^9.1.7",
     "typescript": "^6.0.3"
   }
 }
