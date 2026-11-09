@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/tsconfig-web",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "TypeScript configuration for web applications",
   "keywords": [
     "typescript",
@@ -24,7 +24,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@abelspithost/tsconfig": "^0.3.0"
+    "@abelspithost/tsconfig": "^0.4.0"
   },
   "peerDependencies": {
     "typescript": ">=6.0.0"
