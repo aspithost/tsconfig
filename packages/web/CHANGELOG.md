@@ -1,5 +1,11 @@
 I created this changelog with [@abelspithost/conventional-commits-changelog](https://github.com/aspithost/conventional-commits-changelog)
 
+## 0.1.1 (2026-11-10)
+
+### :bug: Bug Fixes
+
+* **tsconfig-web:** set includes to src directory ([2cce25c](https://github.com/aspithost/tsconfig/commit/2cce25c9f8dd8b442dfe68fbc087c565c1cde57d))
+
 ## 0.1.0 (2026-11-09)
 
 ### :sparkles: Features
