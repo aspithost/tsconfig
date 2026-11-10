@@ -6,6 +6,10 @@ I created this changelog with [@abelspithost/conventional-commits-changelog](htt
 
 * **tsconfig-web:** set includes to src directory ([2cce25c](https://github.com/aspithost/tsconfig/commit/2cce25c9f8dd8b442dfe68fbc087c565c1cde57d))
 
+### :books: Documentation
+
+* **tsconfig-web:** update readme ([bb35a59](https://github.com/aspithost/tsconfig/commit/bb35a594bb29fed4e4e0a02fbb3f343e88d86ca5))
+
 ## 0.1.0 (2026-11-09)
 
 ### :sparkles: Features
