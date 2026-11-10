@@ -44,9 +44,7 @@ Inherits all settings from the [base config](../base) and adds:
 
 ### Include
 
-Extends the base `include` with additional file types:
-
-- `**/*.tsx` — React/JSX components
-- `src/**/*.mts` — explicit ES module TypeScript files
+- `src/**/*.ts` — TypeScript files
+- `src/**/*.tsx` — React/JSX components
 - `src/**/*.vue` — Vue single-file components
 - `src/**/*.svelte` — Svelte components
