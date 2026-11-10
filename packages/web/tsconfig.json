@@ -20,9 +20,8 @@
     }
   },
   "include": [
-    "${configDir}/**/*.ts",
-    "${configDir}/**/*.tsx",
-    "${configDir}/src/**/*.mts",
+    "${configDir}/src/**/*.ts",
+    "${configDir}/src/**/*.tsx",
     "${configDir}/src/**/*.vue",
     "${configDir}/src/**/*.svelte"
   ]
